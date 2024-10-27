@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.archive-list__item:not(:first-child) {
+  margin-top: rem(4);
+}
+
+.archive-list__year,
+.archive-list__month {
+    position: relative;
+    list-style: none;
+    padding-left: rem(32);
+    color: $lightblue;
+    font-size: rem(24);
+    line-height: 1.4583;
+}
+
+.archive-list__year::before, 
+.archive-list__month::before {
+  content: "";
+  position: absolute;
+  content: "\25B6";
+    color: $lightblue;
+    display: inline-block;
+    left: 2%;
+    width: rem(24);
+    height: rem(24);
+    vertical-align: middle;
+    transition: 0.2s;
+}
+
+.archive-list__year.is-active::before,
+.archive-list__month.is-active::before {
+  transform: rotate(90deg);
+  top: 24%;
+}
+
+
+.archive-list__months {
+  margin-top: rem(4);
+  padding-left: rem(24);
+}
+
+.archive-list__month {
+  margin-top: rem(4);
+}

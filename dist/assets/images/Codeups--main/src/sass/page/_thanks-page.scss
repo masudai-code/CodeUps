@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.thanks-page__text {
+    font-size: rem(16);
+    font-family: $base-font-family;
+    font-weight: $normal;
+    color: $blue;
+    text-align: center;
+}
+
+.thanks-page__text-sub {
+    margin-top: rem(32);
+}
+
+.thanks-page__inner {
+    padding: 0 rem(15);
+    max-width: rem(600);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include mq("md") {
+        padding: 0 rem(25);
+        max-width: rem(750);
+    }
+
+}

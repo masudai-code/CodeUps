@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.common-btn {
+  position: relative;
+  padding: rem(16) rem(40);
+  display: flex;
+  background-color: $green;
+  transition: 0.3s;
+  color: $white;
+  width: rem(202);
+  align-items: center;
+  border: rem(1) solid transparent;
+}
+
+.common-btn:hover {
+  background-color: $white;
+  color: $green;
+  border-color: $green;
+}
+
+.common-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: rem(1) solid $green;
+  transform: translateY(rem(4)) translateX(rem(4));
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.common-btn p {
+  display: flex;
+  align-items: center;
+  font-size: rem(14);
+  line-height: calc(22 / 14);
+  letter-spacing: 0;
+  position: static;
+}
+
+.common-btn img {
+  position: static;
+  width: rem(40);
+  height: rem(6);
+  transform: none;
+  margin-left: rem(6);
+  margin-bottom: rem(4);
+}
+
+.common-btn:hover img {
+  content: url("./../images/common/Vector-green.svg");
+}

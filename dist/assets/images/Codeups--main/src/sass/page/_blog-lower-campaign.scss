@@ -1,0 +1,109 @@
+@use "global" as *;
+
+.blog-lower-campaign__inner {
+        padding: 0 rem(40);
+        margin-right: auto;
+        margin-left: auto;
+        @include mq("md") {
+            margin-right: 0;
+            margin-left: 0;
+            padding: 0 rem(24);
+            max-width: rem(342);
+        }
+}
+
+.blog-lower-campaign__contents-content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+
+}
+
+.blog-lower-campaign__container {
+    background-color: $white;
+}
+
+
+.blog-lower-campaign__container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: rem(16);
+    padding-right: rem(24);
+    padding-left: rem(24);
+    padding-bottom: rem(24);
+    height: auto;
+}
+
+.blog-lower-campaign__content-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.blog-lower-campaign__content-card {
+    display: block;
+    background-color: $white;
+    box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, .25);
+}
+
+
+.blog-lower-campaign__img img {
+    min-height: auto;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 294 / 188;
+    object-fit: cover;
+}
+
+
+.blog-lower-campaign__text-box-title {
+    font-family: $base-font-family;
+    font-weight: $medium;
+    color: $blue;
+    font-size: rem(16);
+    line-height: 1.5;
+    border-bottom: 1px solid $lightblue;
+    padding-bottom: rem(8);
+    text-align: center;
+}
+.blog-lower-campaign__money {
+    margin-top: rem(8);
+    text-align: center;
+}
+
+.blog-lower-campaign__money-title {
+    color: $blue;
+    font-family: $base-font-family;
+    font-weight: $normal;
+    font-size: rem(14);
+    line-height: 1.7142;
+}
+
+.blog-lower-campaign__fee {
+    display: flex;
+    margin-top: rem(8);
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-lower-campaign__discount {
+    font-size: rem(20);
+    text-decoration: line-through;
+    text-decoration-color: $red;
+    color: $blue;
+    margin-right: rem(16);
+    padding-top: rem(11);
+    font-family: $lato-font;
+    font-weight: $bold;
+    line-height: 1;
+}
+
+.blog-lower-campaign__main {
+    font-size: rem(32);
+    line-height: 1;
+    font-family: $lato-font;
+    font-weight: $bold;
+    color: $lightblue;
+}

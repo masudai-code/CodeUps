@@ -1,0 +1,90 @@
+@use "global" as *;
+
+
+.error{
+    position: relative;
+    padding-top: rem(84);
+    padding-bottom: rem(104);
+    background-color: $lightblue;
+    @include mq("md") {
+        padding-top: rem(100);
+        padding-bottom: rem(240);
+    }
+}
+
+.error::before {
+    content: "";
+    background-image: url(../images/common/kuzira.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: rem(345);
+    height: rem(345);
+    top: 24%;
+    left: 5%;
+    @include mq("md") {
+        height: rem(700);
+        width: rem(700);
+        left: 9%;
+        top: 17%;
+    }
+}
+
+
+
+.error__inner {
+    padding: 0 rem(15);
+    @include mq("md") {
+        padding: 0 rem(25);
+    }
+}
+
+.error__breadcrumb-container {
+    display: block;
+    text-align: left;
+}
+
+.error__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    margin-top: rem(56);
+    @include mq("md") {
+        margin-top: rem(120);
+    }
+}
+
+.error__text-main {
+    font-size: rem(80);
+    text-indent: rem(32);
+    line-height: 1.2;
+    font-family: $lato-font;
+    font-weight: $normal;
+    color: $white;
+    letter-spacing: 0.5em;
+    @include mq("md") {
+        font-size: rem(160);
+        text-indent: rem(80);
+    }
+}
+
+.error__text-sub {
+    font-size: rem(16);
+    line-height: 1.5;
+    font-family: $lato-font;
+    font-weight: $normal;
+    color: $white;
+    @include mq("md") {
+        margin-top: rem(24);
+    }
+}
+
+.error__button {
+    margin-top: rem(35);
+    @include mq("md"){
+        margin-top: rem(80);
+    }
+}

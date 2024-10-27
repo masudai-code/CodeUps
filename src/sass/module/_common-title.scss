@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.common-title {
+  text-align: center;
+}
+
+.common-title__main {
+  font-size: rem(32);
+  line-height: calc(40 / 32);
+  font-weight: $normal;
+  @include mq("md") {
+    font-size: rem(40);
+    line-height: 1;
+  }
+}
+
+.common-title__main:first-letter {
+  color: $green;
+}
+
+.common-title__sub {
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+  color: $green;
+  margin-top: rem(4);
+  @include mq("md") { 
+  margin-top: rem(8);
+  }
+}
+
+.common-title__main--white:first-letter {
+  color: $white;
+}
+
+.common-title__main--white,
+.common-title__sub--white{
+  @include mq("md") {
+    color: $white;
+  }
+}
