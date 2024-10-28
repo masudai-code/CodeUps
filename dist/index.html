@@ -53,8 +53,213 @@
   </head>
 
   <body>
-    <header></header>
+    <!-- header -->
+    <header class="header layout-header js-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <img
+              loading="lazy"
+              src="./assets/images/common/logo-img.png"
+              alt="CodeUps"
+            />
+          </a>
+        </h1>
+        <nav class="header__nav u-desktop">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#">
+                <div class="header__nav-item-text">
+                  <p class="header__nav-item-text--main">Campaign</p>
+                  <p class="header__nav-item-text--sub">キャンペーン</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">
+                <div class="header__nav-item-text">
+                  <p class="header__nav-item-text--main">About us</p>
+                  <p class="header__nav-item-text--sub">私たちについて</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">
+                <div class="header__nav-item-text">
+                  <p class="header__nav-item-text--main">Information</p>
+                  <p class="header__nav-item-text--sub">ダイビング情報</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">
+                <div class="header__nav-item-text">
+                  <p class="header__nav-item-text--main">Blog</p>
+                  <p class="header__nav-item-text--sub">ブログ</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">
+                <div class="header__nav-item-text">
+                  <p class="header__nav-item-text--main">Voice</p>
+                  <p class="header__nav-item-text--sub">お客様の声</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">
+                <div class="header__nav-item-text">
+                  <p class="header__nav-item-text--main">Price</p>
+                  <p class="header__nav-item-text--sub">料金一覧</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">
+                <div class="header__nav-item-text">
+                  <p class="header__nav-item-text--main">FAQ</p>
+                  <p class="header__nav-item-text--sub">よくある質問</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">
+                <div class="header__nav-item-text">
+                  <p class="header__nav-item-text--main">Contact</p>
+                  <p class="header__nav-item-text--sub">お問合せ</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- hamburger -->
+        <div class="hamburger js-hamburger u-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- ドロワー -->
+        <div class="drawer-menu js-drawer u-mobile">
+          <div class="drawer-menu__inner inner">
+            <div class="drawer-menu__wrapper">
+              <div class="drawer-menu__body">
+                <div class="drawer-menu__block">
+                  <ul class="drawer-menu__items">
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">キャンペーン</a>
+                      <ul class="drawer-menu__sub-items">
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >ライセンス取得</a
+                          >
+                        </li>
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >貸切体験ダイビング</a
+                          >
+                        </li>
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >ナイトダイビング</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">私たちについて</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="drawer-menu__block">
+                  <ul class="drawer-menu__items">
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">ダイビング情報</a>
+                      <ul class="drawer-menu__sub-items">
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >ライセンス講習</a
+                          >
+                        </li>
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >体験ダイビング</a
+                          >
+                        </li>
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >ファンダイビング</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">ブログ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="drawer-menu__body">
+                <div class="drawer-menu__block">
+                  <ul class="drawer-menu__items">
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">お客様の声</a>
+                    </li>
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">料金一覧</a>
+                      <ul class="drawer-menu__sub-items">
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >ライセンス講習</a
+                          >
+                        </li>
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >体験ダイビング</a
+                          >
+                        </li>
+                        <li class="drawer-menu__sub-item">
+                          <a href="#" class="drawer-menu__sub-link"
+                            >ファンダイビング</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="drawer-menu__block">
+                  <ul class="drawer-menu__items">
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">よくある質問</a>
+                    </li>
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link"
+                        >プライバシー<br />ポリシー</a
+                      >
+                    </li>
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">利用規約</a>
+                    </li>
+                    <li class="drawer-menu__item">
+                      <a href="#" class="drawer-menu__link">お問い合せ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
+      <!-- MV -->
+
+
+
+      
       <div class="campaign__btn-wrap">
         <a href="#" class="common-btn">
           <p>View more</p>

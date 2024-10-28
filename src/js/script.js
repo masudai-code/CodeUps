@@ -1,5 +1,21 @@
+jQuery(function ($) {
+  // ハンバーガーメニュー
+  $(".js-hamburger").click(function () {
+    $(this).toggleClass("is-open");
+    $(".js-drawer").fadeToggle();
+  });
 
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+  // ドロワーナビのaタグをクリックで閉じる
+  $(".js-drawer a[href]").on("click", function () {
+    $(".js-hamburger").removeClass("is-open");
+    $(".js-drawer").fadeOut();
+  });
 
-
+  // resizeイベント
+  $(window).on("resize", function () {
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      $(".js-hamburger").removeClass("is-open");
+      $(".js-drawer").fadeOut();
+    }
+  });
 });
