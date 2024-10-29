@@ -448,6 +448,56 @@ a {
 	width: 100%;
 }
 
+.mv {
+	height: 100vh;
+	min-height: 25rem;
+	position: relative;
+	z-index: 1;
+}
+
+.mv__inner {
+	height: inherit;
+	min-height: inherit;
+}
+
+.mv__content {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.mv__title {
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	font-size: 2.5rem;
+	letter-spacing: 0.54em;
+	text-transform: uppercase;
+}
+
+.mv__sub-title {
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+.mv__swiper {
+	height: inherit;
+}
+
+.mv__swiper,
+.swiper-slide picture,
+.swiper-slide img {
+	height: inherit;
+	min-height: inherit;
+}
+
+.swiper-slide img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
 
 .u-desktop {
@@ -496,6 +546,11 @@ html {
 	max-width: 1130px;
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.mv__title {
+	font-size: 5rem;
+	line-height: 1.25;
 }
 
 }

@@ -20,4 +20,14 @@ jQuery(function ($) {
       $(".js-drawer").fadeOut();
     }
   });
+
+  // MV
+  var swiper = new Swiper(".js-mv-swiper", {
+    loop: true,
+    speed: 1500,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    }
+  });
 });
