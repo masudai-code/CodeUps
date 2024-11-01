@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.campaign-swiper__button-wrap {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 0;
+  @include mq("md") {
+    padding-bottom: rem(26);
+  }
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev,
+.campaign-swiper__button-wrap .swiper-button-next {
+  position: relative;
+  height: rem(80);
+  width: rem(80);
+}
+
+.campaign-swiper__button-wrap .swiper-button-next {
+  margin-left: rem(80);
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev::after,
+.campaign-swiper__button-wrap .swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: "";
+  height: rem(80);
+  margin: auto;
+  width: rem(80);
+}
+
+.swiper-button-prev::after {
+  background-image: url(./../images/common/arrow-left.svg);
+}
+
+.swiper-button-next::after {
+  background-image: url(./../images/common/arrow-right.svg);
+}

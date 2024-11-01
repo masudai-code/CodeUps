@@ -1,0 +1,120 @@
+@use "global" as *;
+
+.campaign-card {
+  padding-top: rem(24);
+  @include mq("md") {
+    padding-top: 0;
+  }
+}
+
+.campaign-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+}
+
+.campaign-card__img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.campaign-card__img img {
+  width: 100%;
+  aspect-ratio: 280 / 188;
+  object-fit: cover;
+}
+
+.campaign-card__content {
+  padding: rem(16) rem(16) rem(24) rem(16);
+  @include mq("md") {
+    padding: rem(24) rem(17) rem(40) rem(16);
+  }
+}
+
+.campaign-card__category {
+  padding: rem(3) rem(10);
+  font-size: rem(12);
+  color: $green;
+  line-height: calc(22 / 12);
+  border: rem(1) solid $green;
+  min-width: rem(108);
+  width: fit-content;
+}
+
+.campaign-card__title {
+  position: relative;
+  margin-top: rem(5);
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  font-weight: $medium;
+  color: $black1;
+}
+.campaign-card__title::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: rem(-8);
+  left: 0;
+  width: 100%;
+  height: rem(1);
+  background-color: $green;
+  border-radius: rem(1);
+}
+
+.campaign-card__description {
+  margin-top: rem(16);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
+.campaign-card__description-text {
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  color: $black1;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+  }
+}
+
+.campaign-card__price {
+  margin-top: rem(8);
+}
+
+.campaign-card__price-original {
+  position: relative;
+  font-size: rem(20);
+  line-height: 1;
+  color: $black1;
+  font-weight: $bold;
+  font-family: "Lato", sans-serif;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+.campaign-card__price-original::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: rem(11);
+  left: 0;
+  width: 100%;
+  height: rem(3);
+  background-color: $red;
+}
+
+.campaign-card__price-discounted {
+  margin-left: rem(16);
+  font-size: rem(32);
+  line-height: 1;
+  color: $green;
+  font-weight: $bold;
+  font-family: "Lato", sans-serif;
+  @include mq("md") {
+    font-size: rem(40);
+    margin-left: rem(24);
+  }
+}

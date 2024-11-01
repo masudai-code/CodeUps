@@ -8,6 +8,7 @@
   font-size: rem(32);
   line-height: calc(40 / 32);
   font-weight: $normal;
+  color: $black1;
   @include mq("md") {
     font-size: rem(40);
     line-height: 1;
