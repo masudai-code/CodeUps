@@ -2,7 +2,7 @@
 
 .common-btn {
   position: relative;
-  padding: rem(16) rem(40);
+  padding: rem(15) rem(40);
   display: flex;
   background-color: $green;
   transition: 0.3s;
@@ -29,6 +29,7 @@
   transform: translateY(rem(4)) translateX(rem(4));
   box-sizing: border-box;
   z-index: -1;
+  margin: rem(-1);
 }
 
 .common-btn p {
@@ -46,7 +47,7 @@
   height: rem(6);
   transform: none;
   margin-left: rem(6);
-  margin-bottom: rem(4);
+  margin-bottom: rem(2);
 }
 
 .common-btn:hover img {
