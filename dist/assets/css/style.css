@@ -146,7 +146,7 @@ a {
 }
 
 .layout-about-us {
-	margin: 5rem 0 4.375rem;
+	margin: 5rem 0 4.625rem;
 }
 
 .layout-campaign {
@@ -160,6 +160,11 @@ a {
 	top: 0;
 	width: 100%;
 	z-index: 1000;
+}
+
+.layout-information {
+	background-color: #ddf0f1;
+	padding: 5rem 0 5rem;
 }
 
 .about-us {
@@ -407,7 +412,6 @@ a {
 	right: 0;
 	top: 0;
 	transform: translateY(0.25rem) translateX(0.25rem);
-	z-index: -1;
 }
 
 .common-btn p {
@@ -666,6 +670,49 @@ a {
 	white-space: nowrap;
 }
 
+.information__wrap {
+	margin-top: 1.625rem;
+}
+
+.information__img {
+	width: 100%;
+}
+
+.information__img img {
+	-o-object-fit: cover;
+	aspect-ratio: 345/227;
+	object-fit: cover;
+	width: 100%;
+}
+
+.information__content {
+	margin-top: 1.75rem;
+}
+
+.information__content-title {
+	border-bottom: 1px solid #408f95;
+	color: #0d2936;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.information__text {
+	color: #0d2936;
+	font-family: "Noto Sans JP", serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 0.5rem;
+}
+
+.information__btn-wrap {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5rem;
+	transform: translate(-0.0625rem, -0.0625rem);
+}
+
 .inner {
 	margin-left: auto;
 	margin-right: auto;
@@ -744,6 +791,10 @@ html {
 
 .layout-campaign {
 	margin-top: 7.5rem;
+}
+
+.layout-information {
+	padding: 6.25rem 0 4.75rem;
 }
 
 .about-us::after {
@@ -857,6 +908,30 @@ html {
 
 .header__logo {
 	max-width: 8.3125rem;
+}
+
+.information__wrap {
+	display: flex;
+	margin-top: 2.5rem;
+}
+
+.information__img {
+	width: 81.081%;
+}
+
+.information__img img {
+	aspect-ratio: 540/356;
+}
+
+.information__content {
+	margin-left: 3rem;
+	margin-top: 4.0625rem;
+}
+
+.information__content-title {
+	font-size: 1.5rem;
+	line-height: 1;
+	padding-bottom: 0.25rem;
 }
 
 .inner {
