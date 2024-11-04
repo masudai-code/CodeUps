@@ -149,6 +149,10 @@ a {
 	margin: 5rem 0 4.625rem;
 }
 
+.layout-blog {
+	margin-top: 5rem;
+}
+
 .layout-campaign {
 	padding-top: 2.5rem;
 }
@@ -164,7 +168,7 @@ a {
 
 .layout-information {
 	background-color: #ddf0f1;
-	padding: 5rem 0 5rem;
+	padding: 5rem 0 5.25rem;
 }
 
 .about-us {
@@ -226,6 +230,72 @@ a {
 	justify-content: center;
 	margin-top: 3rem;
 	transform: translate(-0.5rem, -0.0625rem);
+}
+
+.blog-list {
+	grid-gap: 2.5rem;
+	display: grid;
+	gap: 2.5rem;
+	grid-template-columns: repeat(1, 1fr);
+	margin: 1.6875rem auto 0;
+	width: 96.522%;
+}
+
+.blog-list__item a {
+	background-color: #fff;
+	box-shadow: 0.125rem 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+	display: block;
+	height: 100%;
+}
+
+.blog-list__item-img {
+	padding: 1rem 1rem 0;
+	width: 100%;
+}
+
+.blog-list__item-img img {
+	-o-object-fit: cover;
+	aspect-ratio: 301/201;
+	object-fit: cover;
+	width: 100%;
+}
+
+.blog-list__item-content {
+	padding: 1.25rem 1rem 1.3125rem;
+}
+
+.blog-list__item-date {
+	color: #0d2936;
+	font-size: 0.75rem;
+	line-height: 1.5;
+}
+
+.blog-list__item-title {
+	border-bottom: 0.0625rem solid #408f95;
+	color: #0d2936;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	padding-bottom: 0.0625rem;
+}
+
+.blog-list__item-text {
+	color: #0d2936;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 1.1875rem;
+}
+
+.blog__btn-wrap {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5rem;
+	transform: translate(-0.0625rem, -0.0625rem);
+}
+
+.blog {
+	position: relative;
 }
 
 .campaign-card {
@@ -456,10 +526,6 @@ a {
 	font-size: 0.75rem;
 	line-height: 1.5;
 	margin-top: 0.3125rem;
-}
-
-.common-title__main--white:first-letter {
-	color: #fff;
 }
 
 .drawer-menu {
@@ -789,6 +855,10 @@ html {
 	margin: 8.75rem 0 10.25rem;
 }
 
+.layout-blog {
+	margin-top: 0;
+}
+
 .layout-campaign {
 	margin-top: 7.5rem;
 }
@@ -799,7 +869,7 @@ html {
 
 .about-us::after {
 	background-image: url(./../images/common/coralReef-img.png);
-	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	bottom: -5.5625rem;
 	content: "";
@@ -846,6 +916,50 @@ html {
 	margin-top: 2.5rem;
 }
 
+.blog-list {
+	grid-template-columns: repeat(3, 1fr);
+	margin: 5rem auto 0;
+	max-width: 67.4375rem;
+	width: 100%;
+}
+
+.blog__btn-wrap {
+	margin-top: 5rem;
+	transform: translate(-0.1875rem, 0.03125rem);
+}
+
+.blog {
+	padding-top: 6.25rem;
+}
+
+.blog::before {
+	background-image: url(./../images/common/blog-bg-img.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 60.4%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.blog::after {
+	aspect-ratio: 437/201;
+	background-image: url(./../images/common/fish-white-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	display: block;
+	height: 12.5625rem;
+	left: 6.25rem;
+	position: absolute;
+	top: 1.5rem;
+	width: 27.3125rem;
+}
+
 .campaign-card {
 	padding-top: 0;
 }
@@ -887,6 +1001,10 @@ html {
 
 .common-title__sub {
 	margin-top: 0.5rem;
+}
+
+.common-title__main--white:first-letter {
+	color: #fff;
 }
 
 .common-title__main--white,

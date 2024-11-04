@@ -24,17 +24,19 @@
   line-height: calc(18 / 12);
   color: $green;
   margin-top: rem(5);
-  @include mq("md") { 
-  margin-top: rem(8);
+  @include mq("md") {
+    margin-top: rem(8);
   }
 }
 
 .common-title__main--white:first-letter {
-  color: $white;
+  @include mq("md") {
+    color: $white;
+  }
 }
 
 .common-title__main--white,
-.common-title__sub--white{
+.common-title__sub--white {
   @include mq("md") {
     color: $white;
   }
