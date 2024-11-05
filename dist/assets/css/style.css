@@ -171,6 +171,10 @@ a {
 	padding: 5rem 0 5.25rem;
 }
 
+.layout-voice {
+	padding: 5.25rem 0 5rem;
+}
+
 .about-us {
 	position: relative;
 }
@@ -837,6 +841,88 @@ a {
 	object-fit: cover;
 }
 
+.voice-list {
+	grid-gap: 2.5rem;
+	display: grid;
+	gap: 2.5rem;
+	grid-template-columns: repeat(1, 1fr);
+	margin: 2.625rem auto 0;
+	width: 100%;
+}
+
+.voice-list__item a {
+	box-shadow: 0.125rem 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+	display: block;
+	height: 100%;
+	padding: 0.9375rem 1rem 1.3125rem;
+}
+
+.voice-list__header {
+	align-items: flex-end;
+	display: flex;
+}
+
+.voice-list__wrap {
+	width: 100%;
+}
+
+.voice-list__age {
+	color: #0d2936;
+	font-family: "Noto Sans JP", serif;
+	font-size: 0.75rem;
+	line-height: 1.5;
+}
+
+.voice-list__category {
+	border: 0.0625rem solid #408f95;
+	color: #408f95;
+	font-size: 0.75rem;
+	line-height: 1.8333333333;
+	min-width: 6.75rem;
+	padding: 0.3125rem 0.625rem 0.125rem 0.6875rem;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.voice-list__title {
+	border-bottom: 0.0625rem solid #408f95;
+	color: #0d2936;
+	font-size: 1rem;
+	font-weight: 500;
+	padding-top: 0.25rem;
+}
+
+.voice-list__item-img {
+	padding-left: 0.5rem;
+	width: 100%;
+}
+
+.voice-list__item-img img {
+	-o-object-fit: cover;
+	aspect-ratio: 151/117;
+	object-fit: cover;
+	width: 100%;
+}
+
+.voice-list__content {
+	color: #0d2936;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding-top: 1.125rem;
+}
+
+.voice {
+	position: relative;
+}
+
+.voice__btn-wrap {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5rem;
+	transform: translate(-0.0625rem, 0.0625rem);
+}
+
 @media screen and (min-width: 768px) {
 
 .u-desktop {
@@ -865,6 +951,10 @@ html {
 
 .layout-information {
 	padding: 6.25rem 0 4.75rem;
+}
+
+.layout-voice {
+	padding: 9.125rem 0 8.75rem;
 }
 
 .about-us::after {
@@ -1061,6 +1151,85 @@ html {
 .mv__title {
 	font-size: 5rem;
 	line-height: 1.25;
+}
+
+.voice-list {
+	grid-template-columns: repeat(2, 1fr);
+	max-width: 67.5rem;
+	width: 100%;
+}
+
+.voice-list {
+	margin: 1.875rem auto 0;
+}
+
+.voice-list__item a {
+	padding: 1.5rem 1.5rem 1.4375rem;
+}
+
+.voice-list__wrap {
+	max-width: 276px;
+	width: 100%;
+}
+
+.voice-list__info {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+}
+
+.voice-list__category {
+	padding: 0.375rem 1rem 0.3125rem 0.875rem;
+}
+
+.voice-list__title {
+	font-size: 1.5rem;
+	line-height: 1.35;
+	padding: 0.8125rem 0 0.25rem;
+}
+
+.voice-list__item-img {
+	padding-left: 1rem;
+	width: 68.6%;
+}
+
+.voice-list__item-img img {
+	aspect-ratio: 180/140;
+}
+
+.voice-list__content {
+	padding-top: 2.5625rem;
+}
+
+.voice::before {
+	aspect-ratio: 301/138;
+	background-image: url(./../images/common/fish-right-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 8.625rem;
+	left: 6.25rem;
+	position: absolute;
+	top: 1.5rem;
+	width: 18.8125rem;
+}
+
+.voice::after {
+	aspect-ratio: 71/162;
+	background-image: url(./../images/common/seahorse-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	bottom: 4.5625rem;
+	content: "";
+	height: 10.125rem;
+	position: absolute;
+	right: 11.125rem;
+	width: 4.4375rem;
+}
+
+.voice__btn-wrap {
+	margin-top: 5rem;
+	transform: translate(-0.125rem, -0.0625rem);
 }
 
 }

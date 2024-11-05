@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.voice {
+  position: relative;
+}
+
+.voice::before {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    top: rem(24);
+    left: rem(100);
+    width: rem(301);
+    height: rem(138);
+    aspect-ratio: 301 / 138;
+    background-image: url(./../images/common/fish-right-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.voice::after {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    bottom: rem(73);
+    right: rem(178);
+    width: rem(71);
+    height: rem(162);
+    aspect-ratio: 71 / 162;
+    background-image: url(./../images/common/seahorse-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.voice__btn-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: rem(40);
+  transform: translate(rem(-1), rem(1));
+  @include mq("md") {
+    margin-top: rem(80);
+    transform: translate(rem(-2), rem(-1));
+  }
+}
