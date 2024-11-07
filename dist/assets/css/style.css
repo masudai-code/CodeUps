@@ -172,11 +172,11 @@ a {
 }
 
 .layout-price {
-	padding: 5rem 0;
+	padding: 5rem 0 5rem;
 }
 
 .layout-voice {
-	padding: 5.25rem 0 5rem;
+	padding: 5.25rem 0 5.3125rem;
 }
 
 .about-us {
@@ -851,7 +851,7 @@ a {
 }
 
 .price__wrap {
-	margin: 1.5rem 0 2.5rem;
+	margin-top: 1.6875rem;
 }
 
 .price__img {
@@ -866,11 +866,20 @@ a {
 }
 
 .price__content {
-	margin-top: 2.5rem;
+	margin-top: 2.5625rem;
+}
+
+.price__table {
+	border-collapse: collapse;
 }
 
 .price__table:not(:first-child) {
-	margin-top: 2.5rem;
+	margin-top: 2.3125rem;
+}
+
+.price__table .custom-padding td {
+	padding-bottom: 0.25rem;
+	padding-top: 0.5rem;
 }
 
 .price__table th {
@@ -878,7 +887,7 @@ a {
 	color: #0d2936;
 	font-size: 1rem;
 	font-weight: 700;
-	padding-bottom: 0.25rem;
+	line-height: 1.5;
 	text-align: left;
 }
 
@@ -899,7 +908,7 @@ a {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	margin-top: 2.5rem;
+	margin-top: 2.125rem;
 	transform: translate(-0.0625rem, 0.0625rem);
 }
 
@@ -1016,11 +1025,11 @@ html {
 }
 
 .layout-price {
-	padding: 6.25rem 0;
+	padding: 6.25rem 0 6.25rem;
 }
 
 .layout-voice {
-	padding: 9.125rem 0 8.75rem;
+	padding: 9.125rem 0 8.9375rem;
 }
 
 .about-us::after {
@@ -1109,11 +1118,10 @@ html {
 	background-size: cover;
 	content: "";
 	display: block;
-	height: 12.5625rem;
 	left: 6.25rem;
 	position: absolute;
 	top: 1.5rem;
-	width: 27.3125rem;
+	width: 30.3473%;
 }
 
 .campaign-card {
@@ -1219,16 +1227,45 @@ html {
 	line-height: 1.25;
 }
 
+.price {
+	position: relative;
+}
+
+.price::before {
+	aspect-ratio: 437/201;
+	background-image: url(./../images/common/fish-left-img.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	bottom: 3.5rem;
+	content: "";
+	left: 6.25rem;
+	position: absolute;
+	width: 30.3473%;
+}
+
 .price__wrap {
-	margin: 2.5rem 0 5rem;
+	display: flex;
+	flex-direction: row-reverse;
+	margin-bottom: 0;
+	margin-top: 2.5625rem;
 }
 
 .price__img {
 	aspect-ratio: 746/492;
+	margin-left: 5.8125rem;
 }
 
 .price__content {
 	margin-top: 0;
+	max-width: 30.75rem;
+	padding-bottom: 5.875rem;
+	width: 100%;
+}
+
+.price__table td {
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
 .price__btn-wrap {
@@ -1290,11 +1327,10 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 8.625rem;
 	left: 6.25rem;
 	position: absolute;
 	top: 1.5rem;
-	width: 18.8125rem;
+	width: 20.903%;
 }
 
 .voice::after {
