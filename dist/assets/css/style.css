@@ -157,6 +157,10 @@ a {
 	padding-top: 2.5rem;
 }
 
+.layout-contact {
+	padding: 5rem 0 6.25rem;
+}
+
 .layout-header {
 	left: 0;
 	position: fixed;
@@ -172,7 +176,7 @@ a {
 }
 
 .layout-price {
-	padding: 5rem 0 5rem;
+	padding: 5rem 0 5.3125rem;
 }
 
 .layout-voice {
@@ -467,7 +471,7 @@ a {
 	border: 0.0625rem solid transparent;
 	color: #fff;
 	display: flex;
-	padding: 0.9375rem 2.5rem;
+	padding: 0.9375rem 2.4375rem;
 	position: relative;
 	transition: 0.3s;
 	width: 12.625rem;
@@ -534,6 +538,112 @@ a {
 	font-size: 0.75rem;
 	line-height: 1.5;
 	margin-top: 0.3125rem;
+}
+
+.common-title__main.common-title__main--big {
+	font-size: 5rem;
+	line-height: 1;
+}
+
+.common-title__sub.common-title__sub--mt {
+	margin-top: -0.3125rem;
+}
+
+.common-title__link {
+	color: #408f95;
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.2857142857;
+	margin-top: 0.5rem;
+}
+
+.company-info__wrap {
+	padding: 0 1.5625rem;
+	text-align: center;
+}
+
+.company-info__img {
+	border-bottom: 0.0625rem solid #408f95;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 0.375rem;
+	width: 100%;
+}
+
+.company-info__img img {
+	-o-object-fit: cover;
+	aspect-ratio: 174/65;
+	object-fit: cover;
+	width: 58.984%;
+}
+
+.company-info__list {
+	padding-top: 1rem;
+}
+
+.company-info__text p {
+	color: #0d2936;
+	font-family: "Noto Sans JP", serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.company-info__text p + p {
+	margin-top: 0.25rem;
+}
+
+.company-info__map-wrap {
+	margin-top: 1rem;
+}
+
+.company-info__map {
+	height: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 54.238%;
+	position: relative;
+	width: 100%;
+}
+
+.company-info__map iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.contact {
+	position: relative;
+}
+
+.contact::before {
+	aspect-ratio: 109/50;
+	background-image: url(./../images/common/fish-left-img.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	position: absolute;
+	right: 0.9375rem;
+	top: 3.375rem;
+	width: 29.067%;
+}
+
+.contact__wrap {
+	filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+}
+
+.contact-title__wrap {
+	margin: 2.5rem 0.9375rem 0;
+}
+
+.contact__btn-wrap {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 2.375rem;
+	transform: translate(-0.0625rem, 0.0625rem);
 }
 
 .drawer-menu {
@@ -1020,12 +1130,16 @@ html {
 	margin-top: 7.5rem;
 }
 
+.layout-contact {
+	padding: 8.75rem 0 10rem;
+}
+
 .layout-information {
 	padding: 6.25rem 0 4.75rem;
 }
 
 .layout-price {
-	padding: 6.25rem 0 6.25rem;
+	padding: 6.25rem 0 6.4375rem;
 }
 
 .layout-voice {
@@ -1167,13 +1281,81 @@ html {
 	margin-top: 0.5rem;
 }
 
-.common-title__main--white:first-letter {
+.common-title__main.common-title__main--white:first-letter {
+	color: #ddf0f1;
+}
+
+.common-title__main.common-title__main--white,
+.common-title__sub.common-title__sub--white {
 	color: #fff;
 }
 
-.common-title__main--white,
-.common-title__sub--white {
-	color: #fff;
+.company-info__wrap {
+	max-width: 27.5rem;
+	padding: 0;
+	padding: initial;
+	width: 100%;
+}
+
+.company-info__img {
+	padding-bottom: 0.5625rem;
+}
+
+.company-info__img img {
+	aspect-ratio: 200/75;
+	width: 45.455%;
+}
+
+.company-info__list {
+	display: flex;
+	padding-top: 1.4375rem;
+}
+
+.company-info__text {
+	text-align: left;
+}
+
+.company-info__map-wrap {
+	flex: 1;
+	margin-left: 1.3125rem;
+	margin-top: 0;
+	margin-top: initial;
+}
+
+.company-info__map {
+	padding-top: 54.033%;
+}
+
+.contact::before {
+	aspect-ratio: 301/138;
+	right: 3.125rem;
+	top: 6.25rem;
+	width: 20.903%;
+}
+
+.contact__wrap {
+	align-items: center;
+	box-shadow: 0.125rem 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+	display: flex;
+	filter: none;
+	justify-content: center;
+	padding: 5rem 3.125rem;
+}
+
+.contact-title__wrap {
+	border-left: 0.0625rem solid #408f95;
+	flex: 1;
+	margin-left: 5.125rem;
+	margin-right: 0;
+	margin-right: initial;
+	margin-top: 0;
+	margin-top: initial;
+	padding: 1.15625rem 0 1.15625rem 1.0625rem;
+}
+
+.contact__btn-wrap {
+	margin-top: 2.5rem;
+	transform: translate(-0.125rem, -0.0625rem);
 }
 
 .hamburger {

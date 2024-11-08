@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .layout-price {
-  padding: rem(80) 0 rem(80);
+  padding: rem(80) 0 rem(85);
   @include mq("md") {
-    padding: rem(100) 0 rem(100);
+    padding: rem(100) 0 rem(103);
   }
 }
