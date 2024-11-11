@@ -1482,6 +1482,10 @@ html {
 	transform: translate(-0.125rem, -0.0625rem);
 }
 
+.footer__inner.inner {
+	max-width: 70.625rem;
+}
+
 .footer__heading {
 	display: flex;
 }
@@ -1495,6 +1499,7 @@ html {
 	margin-left: 2.5rem;
 	margin-top: 0;
 	margin-top: initial;
+	padding-bottom: 0.3125rem;
 }
 
 .footer__social img {
@@ -1502,14 +1507,20 @@ html {
 	width: 2rem;
 }
 
+.footer__wrapper {
+	gap: 0 2rem;
+	margin-top: 1.625rem;
+}
+
 .footer__body {
-	display: flex;
+	flex-direction: initial;
 	gap: 7.5rem;
 }
 
 .footer__copyright {
 	font-size: 0.875rem;
 	line-height: 1.2857142857;
+	margin-top: 4.8125rem;
 }
 
 .hamburger {

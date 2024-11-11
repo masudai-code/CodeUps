@@ -6,6 +6,9 @@
 
 .footer__inner.inner {
   max-width: rem(400);
+  @include mq("md") {
+    max-width: rem(1130);
+  }
 }
 
 .footer__heading {
@@ -36,6 +39,7 @@
     align-items: flex-end;
     margin-top: initial;
     margin-left: rem(40);
+    padding-bottom: rem(5);
   }
 }
 
@@ -51,7 +55,11 @@
 .footer__wrapper {
   display: flex;
   margin-top: rem(43);
-  gap: 0  rem(18);
+  gap: 0 rem(18);
+  @include mq("md") {
+    margin-top: rem(26);
+    gap: 0 rem(32);
+  }
 }
 
 .footer__body {
@@ -60,7 +68,7 @@
   gap: rem(37);
   flex: 1;
   @include mq("md") {
-    display: flex;
+    flex-direction: initial;
     gap: rem(120);
   }
 }
@@ -129,5 +137,6 @@
   @include mq("md") {
     font-size: rem(14);
     line-height: calc(18 / 14);
+    margin-top: rem(77);
   }
 }
