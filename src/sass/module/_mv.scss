@@ -14,9 +14,9 @@
 
 .mv__content {
   position: absolute;
-  top: 50%;
+  top: 49.4%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-46.4%, -50%);
   z-index: 2;
   text-align: center;
 }
@@ -36,6 +36,8 @@
 .mv__sub-title {
   font-size: rem(20);
   color: $white;
+  margin-top: rem(-5);
+  margin-left: rem(-21);
 }
 
 .mv__swiper {
