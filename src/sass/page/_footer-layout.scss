@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .footer-layout {
-  padding: rem(48) 0 rem(56);
+  padding: rem(48) 0 rem(60);
   @include mq("md") {
     padding: rem(80) 0 rem(80);
   }

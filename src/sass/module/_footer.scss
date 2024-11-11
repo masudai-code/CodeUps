@@ -4,6 +4,10 @@
   background-color: $green;
 }
 
+.footer__inner.inner {
+  max-width: rem(400);
+}
+
 .footer__heading {
   @include mq("md") {
     display: flex;
@@ -46,35 +50,44 @@
 
 .footer__wrapper {
   display: flex;
-  margin-top: rem(12);
+  margin-top: rem(43);
+  gap: 0  rem(18);
 }
 
 .footer__body {
+  display: flex;
+  flex-direction: column;
+  gap: rem(37);
+  flex: 1;
   @include mq("md") {
     display: flex;
     gap: rem(120);
   }
 }
 
-.footer__body:nth-child(2) {
-  margin-left: 4px;
-  @include mq("md") {
-    margin-left: rem(120);
-  }
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
 }
 
-.footer__block {
-  padding-top: rem(28);
+.footer__sub-items {
+  display: flex;
+  flex-direction: column;
+  gap: rem(18);
 }
 
 .footer__item {
   position: relative;
   padding-left: rem(22);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
 }
 
 .footer__item::before {
   position: absolute;
-  top: 0;
+  top: rem(-3);
   left: 0;
   content: "";
   width: rem(18);
@@ -89,26 +102,13 @@
   font-weight: $bold;
   color: $white;
   line-height: calc(18 / 16);
-  padding-bottom: rem(12);
   display: block;
-}
-
-.footer__sub-item {
-  padding: rem(12) 0;
 }
 
 .footer__sub-link {
   font-size: rem(16);
   line-height: calc(18 / 16);
   color: $white;
-}
-
-.footer__item:nth-child(2) .footer__link {
-  margin-top: rem(28);
-}
-
-.footer__item:nth-child(n + 3) {
-  margin-top: rem(28);
 }
 
 .footer__link,
