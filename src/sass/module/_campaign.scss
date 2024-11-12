@@ -4,9 +4,18 @@
   overflow-x: hidden;
 }
 
+.campaign__inner {
+  @include mq("md") {
+    position: relative;
+  }
+}
+
 .campaign__swiper {
   margin-right: calc(50% - 50vw);
   width: 100vw;
+  @include mq("md") {
+    margin-top: rem(40);
+  }
 }
 
 .campaign__btn-wrap {

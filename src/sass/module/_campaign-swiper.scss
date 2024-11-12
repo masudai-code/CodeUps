@@ -5,7 +5,9 @@
   justify-content: right;
   padding-bottom: 0;
   @include mq("md") {
-    padding-bottom: rem(26);
+    position: absolute;
+    top: rem(22);
+    right: rem(15);
   }
 }
 
@@ -17,7 +19,7 @@
 }
 
 .campaign-swiper__button-wrap .swiper-button-next {
-  margin-left: rem(80);
+  margin-left: rem(100);
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::after,

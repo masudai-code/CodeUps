@@ -6,15 +6,15 @@
 
 .contact::before {
   content: "";
-    position: absolute;
-    top: rem(54);
-    right: rem(15);
-    width: 29.067%;
-    aspect-ratio: 109 / 50;
-    background-image: url(./../images/common/fish-left-img.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  position: absolute;
+  top: rem(54);
+  right: rem(15);
+  width: 29.067%;
+  aspect-ratio: 109 / 50;
+  background-image: url(./../images/common/fish-left-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   @include mq("md") {
     top: rem(100);
     right: rem(50);

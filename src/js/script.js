@@ -69,4 +69,40 @@ jQuery(function ($) {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  // ページトップボタン
+  $(".js-page-top").on("click", function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
+  });
+
+  // スクロールイベントでボタンの位置を調整
+  $(window).on("scroll", function () {
+    let scrollHeight = $(document).height();
+    let scrollPosition = $(window).height() + $(window).scrollTop();
+    let footHeight = $("footer").innerHeight();
+    let windowWidth = $(window).width(); // 画面幅を取得
+
+    // デフォルトの位置を設定
+    let bottomPosition = windowWidth <= 768 ? 16 : 20;
+
+    // フッター手前に来た場合、ボタンの位置を調整
+    if (scrollHeight - scrollPosition <= footHeight) {
+      $(".js-page-top").css({
+        position: "fixed",
+        bottom:
+          footHeight - (scrollHeight - scrollPosition) + bottomPosition + "px",
+      });
+    } else {
+      $(".js-page-top").css({
+        position: "fixed",
+        bottom: bottomPosition + "px",
+      });
+    }
+  });
 });
