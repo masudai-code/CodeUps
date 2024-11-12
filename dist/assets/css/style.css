@@ -475,6 +475,26 @@ a {
 	margin-top: 2.5rem;
 }
 
+.colorbox {
+	position: relative;
+	width: 100%;
+}
+
+.colorbox .color {
+	background-color: #408f95;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.colorbox img {
+	display: block;
+	width: 100%;
+}
+
 .common-btn {
 	align-items: center;
 	background-color: #408f95;

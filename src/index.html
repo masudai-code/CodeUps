@@ -49,6 +49,13 @@
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
       defer
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./assets/js/jquery.inview.min.js" defer></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
 
@@ -514,12 +521,13 @@
             <p class="common-title__sub">ダイビング情報</p>
           </div>
           <div class="information__wrap">
-            <div class="information__img">
+            <div class="information__img colorbox">
               <img
                 src="./assets/images/common/info-img.jpg"
                 alt="サンゴ礁を泳ぐ黄色い魚たちの水中風景"
                 loading="lazy"
               />
+              <div class="color"></div>
             </div>
             <div class="information__content">
               <p class="information__content-title">ライセンス講習</p>
@@ -636,11 +644,12 @@
                       <p>ここにタイトルが入ります。ここにタイトル</p>
                     </div>
                   </div>
-                  <div class="voice-list__item-img">
+                  <div class="voice-list__item-img colorbox">
                     <img
                       src="./assets/images/common/voice-img01.jpg"
                       alt="麦わら帽子をかぶり、明るい背景の中で笑顔を見せる女性。自然光が差し込み、柔らかい印象を与える。"
                     />
+                    <div class="color"></div>
                   </div>
                 </div>
                 <div class="voice-list__content">
@@ -662,11 +671,12 @@
                       <p>ここにタイトルが入ります。ここにタイトル</p>
                     </div>
                   </div>
-                  <div class="voice-list__item-img">
+                  <div class="voice-list__item-img colorbox">
                     <img
                       src="./assets/images/common/voice-img02.jpg"
                       alt="親指を立て、ポジティブな表情でカメラに向かって笑顔を見せる男性。白背景で、爽やかな雰囲気。"
                     />
+                    <div class="color"></div>
                   </div>
                 </div>
                 <div class="voice-list__content">
@@ -694,7 +704,7 @@
             <p class="common-title__sub">料金一覧</p>
           </div>
           <div class="price__wrap">
-            <div class="price__img">
+            <div class="price__img colorbox">
               <picture>
                 <source
                   srcset="./assets/images/common/price-PC-img.jpg"
