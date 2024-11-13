@@ -21,7 +21,7 @@ jQuery(function ($) {
 
   // MV
   const swiper = new Swiper(".js-mv-swiper", {
-    // loop: true,
+    loop: true,
     speed: 1500,
     autoplay: {
       delay: 2000,
@@ -52,12 +52,12 @@ jQuery(function ($) {
   var campaign__swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     speed: 2000,
-    slidesPerView: 1.3,
-    spaceBetween: 24,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    slidesPerView: 1.3105,
+    spaceBetween: 26,
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       768: {
         slidesPerView: 3.955,

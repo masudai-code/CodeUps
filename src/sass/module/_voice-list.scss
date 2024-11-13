@@ -81,10 +81,10 @@
 }
 
 .voice-list__item-img {
-  padding-left: rem(8);
+  margin-left: rem(11);
   width: 100%;
   @include mq("md") {
-    padding-left: rem(16);
+    margin-left: rem(16);
     width: 68.6%;
   }
 }

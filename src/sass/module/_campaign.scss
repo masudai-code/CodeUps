@@ -19,10 +19,10 @@
 }
 
 .campaign__btn-wrap {
-  margin-top: rem(40);
   align-items: center;
   display: flex;
   justify-content: center;
+  transform: translate(rem(-2), rem(2));
   @include mq("md") {
     margin-top: rem(80);
   }
