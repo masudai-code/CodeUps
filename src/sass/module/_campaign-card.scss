@@ -5,6 +5,7 @@
   padding-bottom: rem(40);
   @include mq("md") {
     padding-top: 0;
+    padding-bottom: rem(80);
   }
 }
 
@@ -29,7 +30,7 @@
 .campaign-card__content {
   padding: rem(16) rem(16) rem(19) rem(16);
   @include mq("md") {
-    padding: rem(24) rem(17) rem(40) rem(16);
+    padding: rem(23) rem(17) rem(36.422) rem(16);
   }
 }
 
@@ -41,6 +42,9 @@
   border: rem(1) solid $green;
   min-width: rem(108);
   width: fit-content;
+  @include mq("md") {
+    padding: rem(7) rem(15) rem(4) rem(15);
+  }
 }
 
 .campaign-card__title {
@@ -50,6 +54,9 @@
   line-height: calc(24 / 16);
   font-weight: $medium;
   color: $black1;
+  @include mq("md") {
+    margin-top: rem(6);
+  }
 }
 .campaign-card__title::before {
   display: inline-block;
@@ -65,9 +72,10 @@
 
 .campaign-card__description {
   margin-top: rem(15);
-  text-align: center;
+  // text-align: center;
   @include mq("md") {
-    margin-top: rem(24);
+    margin-top: initial;
+    padding: rem(22) rem(15) 0 rem(19);
   }
 }
 
@@ -75,14 +83,20 @@
   font-size: rem(14);
   line-height: calc(24 / 14);
   color: $black1;
+  text-align: center;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(24 / 16);
+    font-family: "Noto Sans JP", serif;
+    padding-right: rem(19);
   }
 }
 
 .campaign-card__price {
   margin-top: rem(6);
+  @include mq("md") {
+    margin-top: rem(7);
+  }
 }
 
 .campaign-card__price-original {
@@ -92,16 +106,17 @@
   color: $black1;
   font-weight: $bold;
   font-family: "Lato", sans-serif;
-  padding: 0  rem(1.5) 0 0;
+  padding: 0 rem(1.5) 0 0;
   @include mq("md") {
     font-size: rem(24);
+    padding: 0 rem(1.5) 0 0;
   }
 }
 .campaign-card__price-original::before {
   display: inline-block;
   content: "";
   position: absolute;
-  bottom: rem(11);
+  bottom: rem(12.8);
   left: 0;
   width: 100%;
   height: rem(3);
@@ -117,6 +132,6 @@
   font-family: "Lato", sans-serif;
   @include mq("md") {
     font-size: rem(40);
-    margin-left: rem(24);
+    margin-left: rem(21);
   }
 }

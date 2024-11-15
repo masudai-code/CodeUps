@@ -14,7 +14,7 @@
   margin-right: calc(50% - 50vw);
   width: 100vw;
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(38);
   }
 }
 
@@ -23,7 +23,4 @@
   display: flex;
   justify-content: center;
   transform: translate(rem(-2), rem(2));
-  @include mq("md") {
-    margin-top: rem(80);
-  }
 }

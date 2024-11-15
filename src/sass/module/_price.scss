@@ -12,8 +12,9 @@
     content: "";
     position: absolute;
     bottom: rem(56);
-    left: rem(100);
+    left: calc(50% - min(48vw, rem(621)));
     width: 30.3473%;
+    max-width: rem(437);
     aspect-ratio: 437 / 201;
     background-image: url(./../images/common/fish-left-img.png);
     background-repeat: no-repeat;
