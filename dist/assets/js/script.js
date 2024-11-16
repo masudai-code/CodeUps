@@ -51,10 +51,10 @@ jQuery(function ($) {
     speed: 2000,
     slidesPerView: 1.31043,
     spaceBetween: 26,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
-    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       768: {
         slidesPerView: 3.96784,

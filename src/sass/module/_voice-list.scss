@@ -34,7 +34,7 @@
 .voice-list__wrap {
   width: 100%;
   @include mq("md") {
-    min-width: 276px;
+    max-width: 276px;
     width: 100%;
   }
 }
@@ -81,11 +81,11 @@
 }
 
 .voice-list__item-img {
-  margin-left: rem(11);
+  margin-left: rem(13);
   width: 100%;
   @include mq("md") {
     margin-left: rem(16);
-    width: 68.6%;
+    width: 64.6%;
   }
 }
 
