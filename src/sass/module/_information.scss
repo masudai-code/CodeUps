@@ -46,7 +46,7 @@
 }
 
 .information__text {
-  margin-top: rem(8);
+  margin-top: rem(7);
   font-size: rem(16);
   line-height: calc(24 / 16);
   color: $black1;
@@ -58,7 +58,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  transform: translate(rem(-1), rem(-1));
+  transform: translate(rem(-1), 0);
   @include mq("md") {
     margin-top: rem(41);
     transform: translate(rem(-2), rem(-1));

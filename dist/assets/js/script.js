@@ -49,7 +49,7 @@ jQuery(function ($) {
   var campaign__swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     speed: 2000,
-    slidesPerView: 1.3105,
+    slidesPerView: 1.31043,
     spaceBetween: 26,
     autoplay: {
       delay: 2000,

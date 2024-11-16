@@ -27,7 +27,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 345 / 212;
-  margin-top: rem(27);
+  margin-top: rem(26);
   @include mq("md") {
     margin-top: rem(38);
     aspect-ratio: 1080 / 661;

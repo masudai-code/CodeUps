@@ -28,7 +28,7 @@
 }
 
 .campaign-card__content {
-  padding: rem(16) rem(16) rem(19) rem(16);
+  padding: rem(16) rem(16) rem(20.5) rem(16);
   @include mq("md") {
     padding: rem(23) rem(17) rem(36.422) rem(16);
   }
@@ -62,12 +62,15 @@
   display: inline-block;
   content: "";
   position: absolute;
-  bottom: rem(-6);
+  bottom: rem(-5.5);
   left: 0;
   width: 100%;
   height: rem(1);
   background-color: $green;
   border-radius: rem(1);
+  @include mq("md") { 
+    bottom: rem(-6);
+  }
 }
 
 .campaign-card__description {
@@ -94,8 +97,10 @@
 
 .campaign-card__price {
   margin-top: rem(6);
+  text-align: center;
   @include mq("md") {
     margin-top: rem(7);
+    text-align: initial;
   }
 }
 
@@ -116,11 +121,14 @@
   display: inline-block;
   content: "";
   position: absolute;
-  bottom: rem(12.8);
+  bottom: rem(11);
   left: 0;
   width: 100%;
   height: rem(3);
   background-color: $red;
+  @include mq("md") {
+    bottom: rem(12.8);
+  }
 }
 
 .campaign-card__price-discounted {

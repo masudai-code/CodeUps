@@ -32,7 +32,7 @@
 }
 
 .company-info__list {
-  padding-top: rem(16);
+  padding-top: rem(15);
   @include mq("md") {
     display: flex;
     padding-top: rem(23);
@@ -42,6 +42,13 @@
 .company-info__text {
   @include mq("md") {
     text-align: left;
+  }
+}
+
+.company-info__text-address {
+  padding-right: rem(10);
+  @include mq("md") {
+    padding-right: initial;
   }
 }
 

@@ -22,5 +22,8 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  transform: translate(rem(-2), rem(2));
+  transform: translate(rem(-2), 0);
+  @include mq("md") {
+    transform: translate(rem(-2), rem(2));
+  }
 }
