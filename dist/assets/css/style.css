@@ -1291,7 +1291,7 @@ html {
 }
 
 .layout-about-us {
-	margin: 9.0625rem 0 10.25rem;
+	margin: 8.4375rem 0 10.25rem;
 }
 
 .layout-blog {
@@ -1299,9 +1299,8 @@ html {
 }
 
 .layout-campaign {
-	margin-top: 7.5rem;
-	padding: 0;
-	padding: initial;
+	padding-bottom: 0.625rem;
+	padding-top: 7.5rem;
 }
 
 .layout-contact {
@@ -1314,7 +1313,7 @@ html {
 
 .layout-page-top {
 	bottom: 1.25rem;
-	right: 1rem;
+	right: 1.25rem;
 }
 
 .layout-price {
@@ -1550,7 +1549,7 @@ html {
 	display: flex;
 	filter: none;
 	justify-content: center;
-	padding: 5rem 3.125rem;
+	padding: 5rem 3.125rem 4.9375rem 3.125rem;
 }
 
 .contact-title__wrap {
@@ -1696,7 +1695,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	bottom: 3.5rem;
+	bottom: 3.75rem;
 	content: "";
 	left: calc(50% - min(48vw, 38.8125rem));
 	max-width: 27.3125rem;
@@ -1704,11 +1703,14 @@ html {
 	width: 30.3473%;
 }
 
+.price-title__wrap {
+	padding-right: 0.375rem;
+}
+
 .price__wrap {
 	display: flex;
 	flex-direction: row-reverse;
-	margin-bottom: 0;
-	margin-top: 2.5625rem;
+	margin-top: 2.375rem;
 }
 
 .price__img {
@@ -1729,7 +1731,7 @@ html {
 }
 
 .price__btn-wrap {
-	margin-top: 5rem;
+	margin-top: 5.125rem;
 	transform: translate(-0.125rem, -0.0625rem);
 }
 
