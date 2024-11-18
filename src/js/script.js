@@ -52,15 +52,15 @@ jQuery(function ($) {
   var campaign__swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     speed: 2000,
-    slidesPerView: 1.31043,
+    slidesPerView: "auto",
     spaceBetween: 26,
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       768: {
-        slidesPerView: 3.96784,
+        slidesPerView: "auto",
         spaceBetween: 40,
       },
     },

@@ -3,9 +3,13 @@
 .campaign-card {
   padding-top: rem(27);
   padding-bottom: rem(40);
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: rem(280);
   @include mq("md") {
     padding-top: 0;
     padding-bottom: rem(80);
+    max-width: rem(333);
   }
 }
 
@@ -68,14 +72,13 @@
   height: rem(1);
   background-color: $green;
   border-radius: rem(1);
-  @include mq("md") { 
+  @include mq("md") {
     bottom: rem(-6);
   }
 }
 
 .campaign-card__description {
   margin-top: rem(15);
-  // text-align: center;
   @include mq("md") {
     margin-top: initial;
     padding: rem(22) rem(15) 0 rem(19);
@@ -91,7 +94,6 @@
     font-size: rem(16);
     line-height: calc(24 / 16);
     font-family: "Noto Sans JP", serif;
-    padding-right: rem(19);
   }
 }
 
@@ -100,7 +102,6 @@
   text-align: center;
   @include mq("md") {
     margin-top: rem(7);
-    text-align: initial;
   }
 }
 

@@ -322,8 +322,11 @@ a {
 }
 
 .campaign-card {
+	flex: 0 0 auto;
+	max-width: 17.5rem;
 	padding-bottom: 2.5rem;
 	padding-top: 1.6875rem;
+	width: 100%;
 }
 
 .campaign-card a {
@@ -528,6 +531,7 @@ a {
 	right: 0;
 	top: 0;
 	transform: translateY(0.25rem) translateX(0.25rem);
+	z-index: -1;
 }
 
 .common-btn p {
@@ -987,6 +991,28 @@ a {
 	text-align: center;
 }
 
+.header__nav-item-text {
+	display: inline-block;
+	position: relative;
+}
+
+.header__nav-item-text::after {
+	background: #fff;
+	bottom: -0.25rem;
+	content: "";
+	height: 0.0625rem;
+	left: 0;
+	position: absolute;
+	transform: scale(0, 1);
+	transform-origin: center top;
+	transition: transform 0.3s;
+	width: 100%;
+}
+
+.header__nav-item-text:hover::after {
+	transform: scale(1, 1);
+}
+
 .header__nav-item-text--main {
 	color: #fff;
 	font-size: 1.125rem;
@@ -1429,6 +1455,7 @@ html {
 }
 
 .campaign-card {
+	max-width: 20.8125rem;
 	padding-bottom: 5rem;
 	padding-top: 0;
 }
@@ -1459,13 +1486,10 @@ html {
 	font-family: "Noto Sans JP", serif;
 	font-size: 1rem;
 	line-height: 1.5;
-	padding-right: 1.1875rem;
 }
 
 .campaign-card__price {
 	margin-top: 0.4375rem;
-	text-align: left;
-	text-align: initial;
 }
 
 .campaign-card__price-original {
