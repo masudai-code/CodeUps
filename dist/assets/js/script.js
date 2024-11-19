@@ -80,7 +80,7 @@ jQuery(function ($) {
     var scrollHeight = $(document).height();
     var scrollPosition = $(window).height() + $(window).scrollTop();
     var footHeight = $("footer").innerHeight();
-    var windowWidth = $(window).width(); // 画面幅を取得
+    var windowWidth = $(window).width();
 
     // デフォルトの位置を設定
     var bottomPosition = windowWidth <= 768 ? 16 : 20;
@@ -112,7 +112,6 @@ jQuery(function ($) {
     var counter = 0;
     image.css("opacity", "0");
     color.css("width", "0%");
-    //inviewを使って背景色が画面に現れたら処理をする
     color.on("inview", function () {
       if (counter == 0) {
         $(this).delay(200).animate({

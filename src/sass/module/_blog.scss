@@ -38,3 +38,15 @@
     background-repeat: no-repeat;
   }
 }
+
+.blog__btn-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: rem(40);
+  transform: translate(rem(-1), 0);
+  @include mq("md") {
+    margin-top: rem(80);
+    transform: translate(rem(-3), rem(0.5));
+  }
+}

@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .layout-about-us {
-  margin: rem(45) 0 rem(74);
+  padding: rem(45) 0 rem(74);
   @include mq("md") {
-    margin: rem(135) 0 rem(164);
+    padding: rem(135) 0 rem(164);
   }
 }
