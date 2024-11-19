@@ -1,35 +1,54 @@
 @use "global" as *;
 
-.common-btn {
+.common-btn.slide {
   position: relative;
-  padding: rem(15) rem(39);
+  padding: rem(16) rem(38) rem(16) rem(40);
   display: flex;
   background-color: $green;
   transition: 0.3s;
   color: $white;
   width: rem(202);
   align-items: center;
-  border: rem(1) solid transparent;
+  z-index: 1;
 }
 
-.common-btn:hover {
+.common-btn.slide::after {
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  border: rem(1) solid $green;
+  z-index: -1;
+}
+
+.common-btn.slide:hover {
   background-color: $white;
   color: $green;
   border-color: $green;
 }
 
-.common-btn::after {
+.common-btn.slide:hover::after {
+  transform: scale(1, 1);
+}
+
+.common-btn.slide::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   border: rem(1) solid $green;
   transform: translateY(rem(4)) translateX(rem(4));
   box-sizing: border-box;
   z-index: -1;
-  margin: rem(-1);
+  margin: 0;
 }
 
 .common-btn p {
@@ -43,11 +62,10 @@
 
 .common-btn img {
   position: static;
-  width: rem(40);
-  height: rem(6);
+  width: rem(42);
   transform: none;
-  margin-left: rem(6);
-  margin-bottom: rem(2);
+  margin-left: rem(7);
+  margin-bottom: rem(4);
 }
 
 .common-btn:hover img {

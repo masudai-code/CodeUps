@@ -502,35 +502,54 @@ a {
 	width: 100%;
 }
 
-.common-btn {
+.common-btn.slide {
 	align-items: center;
 	background-color: #408f95;
-	border: 0.0625rem solid transparent;
 	color: #fff;
 	display: flex;
-	padding: 0.9375rem 2.4375rem;
+	padding: 1rem 2.375rem 1rem 2.5rem;
 	position: relative;
 	transition: 0.3s;
 	width: 12.625rem;
+	z-index: 1;
 }
 
-.common-btn:hover {
+.common-btn.slide::after {
+	background-color: #fff;
+	border: 0.0625rem solid #408f95;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+	width: 100%;
+	z-index: -1;
+}
+
+.common-btn.slide:hover {
 	background-color: #fff;
 	border-color: #408f95;
 	color: #408f95;
 }
 
-.common-btn::after {
+.common-btn.slide:hover::after {
+	transform: scale(1, 1);
+}
+
+.common-btn.slide::before {
 	border: 0.0625rem solid #408f95;
-	bottom: 0;
 	box-sizing: border-box;
 	content: "";
+	height: 100%;
 	left: 0;
-	margin: -0.0625rem;
+	margin: 0;
 	position: absolute;
-	right: 0;
 	top: 0;
 	transform: translateY(0.25rem) translateX(0.25rem);
+	width: 100%;
 	z-index: -1;
 }
 
@@ -544,12 +563,11 @@ a {
 }
 
 .common-btn img {
-	height: 0.375rem;
-	margin-bottom: 0.125rem;
-	margin-left: 0.375rem;
+	margin-bottom: 0.25rem;
+	margin-left: 0.4375rem;
 	position: static;
 	transform: none;
-	width: 2.5rem;
+	width: 2.625rem;
 }
 
 .common-btn:hover img {
@@ -1521,7 +1539,7 @@ html {
 }
 
 .campaign__btn-wrap {
-	transform: translate(-0.125rem, 0.125rem);
+	transform: translate(-0.125rem, 0.0625rem);
 }
 
 .common-title__main {
