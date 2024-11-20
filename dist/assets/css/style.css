@@ -210,24 +210,34 @@ a {
 }
 
 .about-us__img01 {
-	-o-object-fit: cover;
-	aspect-ratio: 128/194;
 	left: 0;
-	object-fit: cover;
+	max-width: 100%;
 	position: absolute;
 	top: 0;
 	width: 37.1014492754%;
 }
 
-.about-us__img02 {
+.about-us__img01 img {
 	-o-object-fit: cover;
-	aspect-ratio: 281/186;
-	bottom: 0;
+	aspect-ratio: 128/194;
 	object-fit: cover;
+	width: 100%;
+}
+
+.about-us__img02 {
+	bottom: 0;
+	max-width: 100%;
 	position: absolute;
 	right: 0;
 	width: 81.4492753623%;
 	z-index: -1;
+}
+
+.about-us__img02 img {
+	-o-object-fit: cover;
+	aspect-ratio: 281/186;
+	object-fit: cover;
+	width: 100%;
 }
 
 .about-us__text-content {
@@ -1378,7 +1388,7 @@ html {
 	background-image: url(./../images/common/coralReef-img.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	bottom: -5.5625rem;
+	bottom: 4.625rem;
 	content: "";
 	max-width: 12.125rem;
 	position: absolute;
@@ -1389,6 +1399,22 @@ html {
 .about-us__content-wrap {
 	aspect-ratio: 1080/661;
 	margin-top: 2.375rem;
+}
+
+.about-us__img01 {
+	max-width: 25rem;
+}
+
+.about-us__img01 img {
+	aspect-ratio: 400/606;
+}
+
+.about-us__img02 {
+	max-width: 55rem;
+}
+
+.about-us__img02 img {
+	aspect-ratio: 880/581;
 }
 
 .about-us__text-content {
