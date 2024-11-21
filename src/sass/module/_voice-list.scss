@@ -16,6 +16,10 @@
   }
 }
 
+.voice-list__item:hover .voice-list__item-img {
+  opacity: 0.7;
+}
+
 .voice-list__item a {
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
   display: block;
@@ -83,6 +87,7 @@
 .voice-list__item-img {
   margin-left: rem(13);
   width: 100%;
+  transition: 0.3s;
   @include mq("md") {
     margin-left: rem(16);
     width: 64.6%;

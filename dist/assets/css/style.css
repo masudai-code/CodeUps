@@ -283,6 +283,7 @@ a {
 
 .blog-list__item-img {
 	padding: 1rem 1rem 0;
+	transition: 0.3s;
 	width: 100%;
 }
 
@@ -291,6 +292,10 @@ a {
 	aspect-ratio: 301/201;
 	object-fit: cover;
 	width: 100%;
+}
+
+.blog-list__item:hover .blog-list__item-img {
+	opacity: 0.7;
 }
 
 .blog-list__item-content {
@@ -339,6 +344,10 @@ a {
 	width: 100%;
 }
 
+.campaign-card:hover .campaign-card__img {
+	opacity: 0.7;
+}
+
 .campaign-card a {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.25);
 	display: flex;
@@ -348,6 +357,7 @@ a {
 
 .campaign-card__img {
 	overflow: hidden;
+	transition: 0.3s;
 	width: 100%;
 }
 
@@ -1028,7 +1038,7 @@ a {
 	background: #fff;
 	bottom: -0.25rem;
 	content: "";
-	height: 0.0625rem;
+	height: 0.075rem;
 	left: 0;
 	position: absolute;
 	transform: scale(0, 1);
@@ -1258,6 +1268,10 @@ a {
 	width: 100%;
 }
 
+.voice-list__item:hover .voice-list__item-img {
+	opacity: 0.7;
+}
+
 .voice-list__item a {
 	box-shadow: 0.125rem 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.25);
 	display: block;
@@ -1302,6 +1316,7 @@ a {
 
 .voice-list__item-img {
 	margin-left: 0.8125rem;
+	transition: 0.3s;
 	width: 100%;
 }
 

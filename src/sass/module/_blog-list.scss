@@ -24,12 +24,17 @@
 .blog-list__item-img {
   width: 100%;
   padding: rem(16) rem(16) 0;
+  transition: 0.3s;
 }
 
 .blog-list__item-img img {
   width: 100%;
   aspect-ratio: 301 / 201;
   object-fit: cover;
+}
+
+.blog-list__item:hover .blog-list__item-img {
+  opacity: 0.7;
 }
 
 .blog-list__item-content {
