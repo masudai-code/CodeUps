@@ -43,6 +43,10 @@
   }
 }
 
+.footer__social-link:hover {
+  opacity: 0.7;
+}
+
 .footer__social img {
   width: rem(24);
   height: rem(24);
@@ -113,10 +117,18 @@
   display: block;
 }
 
+.footer__link:hover {
+  opacity: 0.7;
+}
+
 .footer__sub-link {
   font-size: rem(16);
   line-height: calc(18 / 16);
   color: $white;
+}
+
+.footer__sub-link:hover {
+  opacity: 0.7;
 }
 
 .footer__link,
@@ -134,6 +146,7 @@
   white-space: nowrap;
   margin-top: rem(41);
   display: block;
+  font-family: $base-font-family-en;
   @include mq("md") {
     font-size: rem(14);
     line-height: calc(18 / 14);

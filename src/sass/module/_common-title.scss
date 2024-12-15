@@ -9,6 +9,7 @@
   line-height: calc(40 / 32);
   font-weight: $normal;
   color: $black1;
+  font-family: $base-font-family-en;
   @include mq("md") {
     font-size: rem(40);
     line-height: 1;
@@ -24,6 +25,7 @@
   line-height: calc(18 / 12);
   color: $green;
   margin-top: rem(5);
+  
   @include mq("md") {
     margin-top: rem(10);
   }
@@ -48,7 +50,7 @@
 }
 
 .common-title__sub.common-title__sub--mt {
-  margin-top:  rem(-5);
+  margin-top: rem(-5);
 }
 
 .common-title__link {

@@ -93,6 +93,7 @@
   font-size: rem(40);
   line-height: 1;
   color: $green;
+  font-family: $base-font-family-en;
   @include mq("md") {
     font-size: rem(80);
     line-height: calc(100 / 80);

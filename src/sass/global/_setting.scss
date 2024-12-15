@@ -13,11 +13,13 @@ $padding-sp: 15px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "Gotu", "Noto Sans JP", serif;
-$second-font-family: "Noto Serif JP", serif;
+$base-font-family-ja: "Noto Sans JP", sans-serif;
+$second-font-family-ja: "Noto Serif JP", serif;
+$base-font-family-en: "Gotu", sans-serif;
+$second-font-family-en: "Lato", sans-serif;
 
 body {
-  font-family: $base-font-family;
+  font-family: $base-font-family-ja;
 }
 
 // フォントウェイト
