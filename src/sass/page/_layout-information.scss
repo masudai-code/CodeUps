@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .layout-information {
+  margin-top: rem(74);
   padding: rem(80) 0 rem(84);
   background-color: $blue;
   @include mq("md") {
+    margin-top: rem(164);
     padding: rem(100) rem(8) rem(75) 0;
   }
 }

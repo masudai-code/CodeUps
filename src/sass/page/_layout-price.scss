@@ -2,7 +2,9 @@
 
 .layout-price {
   padding: rem(80) 0 rem(85);
+  margin-top: rem(85);
   @include mq("md") {
     padding: rem(100) 0 rem(103);
+    margin-top: rem(143);
   }
 }

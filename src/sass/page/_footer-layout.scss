@@ -2,7 +2,9 @@
 
 .footer-layout {
   padding: rem(48) 0 rem(60);
+  margin-top: rem(104);
   @include mq("md") {
     padding: rem(80) 0 rem(80);
+    margin-top: rem(160);
   }
 }

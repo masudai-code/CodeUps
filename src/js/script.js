@@ -22,11 +22,13 @@ jQuery(function ($) {
   // MV
   const swiper = new Swiper(".js-mv-swiper", {
     loop: true,
-    speed: 1500,
+    effect: "fade",
+    speed: 2000,
     autoplay: {
-      delay: 2000,
+      delay: 4000,
       disableOnInteraction: false,
     },
+    allowTouchMove: false,
   });
 
   // campaign-リサイズ処理（PC時のみ矢印表示）
