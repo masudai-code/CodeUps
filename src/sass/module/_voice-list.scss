@@ -8,7 +8,6 @@
   width: 100%;
   @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
-    max-width: rem(1080);
     width: 100%;
   }
   @include mq(md) {

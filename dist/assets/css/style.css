@@ -1472,7 +1472,6 @@ html {
 .blog-list {
 	grid-template-columns: repeat(3, 1fr);
 	margin: 4.875rem auto 0;
-	max-width: 67.4375rem;
 	width: 100%;
 }
 
@@ -1843,7 +1842,6 @@ html {
 
 .voice-list {
 	grid-template-columns: repeat(2, 1fr);
-	max-width: 67.5rem;
 	width: 100%;
 }
 
