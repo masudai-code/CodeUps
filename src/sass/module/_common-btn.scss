@@ -3,7 +3,7 @@
 .common-btn.slide {
   position: relative;
   padding: rem(16) rem(38) rem(16) rem(40);
-  display: flex;
+  display: inline-flex;
   background-color: $green;
   transition: 0.3s;
   color: $white;

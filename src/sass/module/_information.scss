@@ -57,12 +57,8 @@
 
 .information__btn-wrap {
   margin-top: rem(40);
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  transform: translate(rem(-1), 0);
+  text-align: center;
   @include mq("md") {
     margin-top: rem(41);
-    transform: translate(rem(-2), rem(-1));
   }
 }

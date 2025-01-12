@@ -35,13 +35,9 @@
 }
 
 .voice__btn-wrap {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-top: rem(40);
-  transform: translate(rem(-1), rem(1));
+  text-align: center;
   @include mq("md") {
     margin-top: rem(81);
-    transform: translate(rem(-2), rem(-1));
   }
 }

@@ -103,13 +103,9 @@
 }
 
 .price__btn-wrap {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-top: rem(34);
-  transform: translate(rem(-1), rem(1));
+  text-align: center;
   @include mq("md") {
     margin-top: rem(82);
-    transform: translate(rem(-2), rem(-1));
   }
 }

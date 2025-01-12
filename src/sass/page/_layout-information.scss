@@ -6,6 +6,6 @@
   background-color: $blue;
   @include mq("md") {
     margin-top: rem(164);
-    padding: rem(100) rem(8) rem(75) 0;
+    padding: rem(100) 0 rem(75) 0;
   }
 }

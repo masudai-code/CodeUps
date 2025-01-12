@@ -262,11 +262,8 @@ a {
 }
 
 .about-us__btn-wrap {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	margin-top: 3rem;
-	transform: translate(-0.5rem, -0.0625rem);
+	text-align: center;
 }
 
 .blog-list {
@@ -334,11 +331,8 @@ a {
 }
 
 .blog__btn-wrap {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	margin-top: 2.5rem;
-	transform: translate(-0.0625rem, 0);
+	text-align: center;
 }
 
 .campaign-card {
@@ -502,10 +496,7 @@ a {
 }
 
 .campaign__btn-wrap {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	transform: translate(-0.125rem, 0);
+	text-align: center;
 }
 
 .colorbox {
@@ -532,7 +523,7 @@ a {
 	align-items: center;
 	background-color: #408f95;
 	color: #fff;
-	display: flex;
+	display: inline-flex;
 	padding: 1rem 2.375rem 1rem 2.5rem;
 	position: relative;
 	transition: 0.3s;
@@ -728,11 +719,8 @@ a {
 }
 
 .contact__btn-wrap {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	margin-top: 2.375rem;
-	transform: translate(-0.0625rem, 0.0625rem);
+	text-align: center;
 }
 
 .drawer-menu {
@@ -1129,11 +1117,8 @@ a {
 }
 
 .information__btn-wrap {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	margin-top: 2.5rem;
-	transform: translate(-0.0625rem, 0);
+	text-align: center;
 }
 
 .inner {
@@ -1275,11 +1260,8 @@ a {
 }
 
 .price__btn-wrap {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	margin-top: 2.125rem;
-	transform: translate(-0.0625rem, 0.0625rem);
+	text-align: center;
 }
 
 .voice-list {
@@ -1362,11 +1344,8 @@ a {
 }
 
 .voice__btn-wrap {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	margin-top: 2.5rem;
-	transform: translate(-0.0625rem, 0.0625rem);
+	text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1407,7 +1386,7 @@ html {
 
 .layout-information {
 	margin-top: 10.25rem;
-	padding: 6.25rem 0.5rem 4.6875rem 0;
+	padding: 6.25rem 0 4.6875rem 0;
 }
 
 .layout-page-top {
@@ -1488,7 +1467,6 @@ html {
 
 .about-us__btn-wrap {
 	margin-top: 2.5rem;
-	transform: translate(-0.0625rem, -0.0625rem);
 }
 
 .blog-list {
@@ -1536,7 +1514,6 @@ html {
 
 .blog__btn-wrap {
 	margin-top: 5rem;
-	transform: translate(-0.1875rem, 0.03125rem);
 }
 
 .campaign-card {
@@ -1603,10 +1580,6 @@ html {
 
 .campaign__swiper {
 	margin-top: 2.375rem;
-}
-
-.campaign__btn-wrap {
-	transform: translate(-0.125rem, 0.0625rem);
 }
 
 .common-title__main {
@@ -1698,7 +1671,6 @@ html {
 
 .contact__btn-wrap {
 	margin-top: 2.5rem;
-	transform: translate(-0.125rem, -0.0625rem);
 }
 
 .footer__inner.inner {
@@ -1786,7 +1758,6 @@ html {
 
 .information__btn-wrap {
 	margin-top: 2.5625rem;
-	transform: translate(-0.125rem, -0.0625rem);
 }
 
 .inner {
@@ -1868,7 +1839,6 @@ html {
 
 .price__btn-wrap {
 	margin-top: 5.125rem;
-	transform: translate(-0.125rem, -0.0625rem);
 }
 
 .voice-list {
@@ -1947,7 +1917,6 @@ html {
 
 .voice__btn-wrap {
 	margin-top: 5.0625rem;
-	transform: translate(-0.125rem, -0.0625rem);
 }
 
 }
