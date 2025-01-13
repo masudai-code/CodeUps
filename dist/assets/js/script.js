@@ -1,8 +1,19 @@
 "use strict";
 
 jQuery(function ($) {
+  var scrollPosition = 0;
+
   // ハンバーガーメニュー
   $(".js-hamburger").click(function () {
+    if ($(this).hasClass("is-open")) {
+      // ドロワーを閉じるとき
+      $("body").removeClass("no-scroll");
+      window.scrollTo(0, scrollPosition);
+    } else {
+      // ドロワーを開くとき
+      scrollPosition = $(window).scrollTop();
+      $("body").addClass("no-scroll");
+    }
     $(this).toggleClass("is-open");
     $(".js-drawer").fadeToggle();
   });
@@ -11,6 +22,8 @@ jQuery(function ($) {
   $(".js-drawer a[href]").on("click", function () {
     $(".js-hamburger").removeClass("is-open");
     $(".js-drawer").fadeOut();
+    $("body").removeClass("no-scroll");
+    window.scrollTo(0, scrollPosition);
   });
 
   // hamburger-resizeイベント
@@ -18,6 +31,8 @@ jQuery(function ($) {
     if (window.matchMedia("(min-width: 768px)").matches) {
       $(".js-hamburger").removeClass("is-open");
       $(".js-drawer").fadeOut();
+      $("body").removeClass("no-scroll");
+      window.scrollTo(0, scrollPosition);
     }
   });
 

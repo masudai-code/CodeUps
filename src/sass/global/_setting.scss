@@ -22,6 +22,12 @@ body {
   font-family: $base-font-family-ja;
 }
 
+body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 // フォントウェイト
 $normal: 400;
 $medium: 500;
