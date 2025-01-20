@@ -7,13 +7,15 @@ jQuery(function ($) {
       // ドロワーを閉じるとき
       $("body").removeClass("no-scroll");
       window.scrollTo(0, scrollPosition);
+      $(".header").removeClass("header--active");
     } else {
       // ドロワーを開くとき
       scrollPosition = $(window).scrollTop();
       $("body").addClass("no-scroll");
+      $(".header").addClass("header--active");
     }
     $(this).toggleClass("is-open");
-    $(".js-drawer").fadeToggle();
+    $(".js-drawer").fadeToggle(500);
   });
 
   // ドロワーナビのaタグをクリックで閉じる
@@ -22,6 +24,7 @@ jQuery(function ($) {
     $(".js-drawer").fadeOut();
     $("body").removeClass("no-scroll");
     window.scrollTo(0, scrollPosition);
+    $(".header").removeClass("header--active");
   });
 
   // hamburger-resizeイベント
@@ -31,6 +34,7 @@ jQuery(function ($) {
       $(".js-drawer").fadeOut();
       $("body").removeClass("no-scroll");
       window.scrollTo(0, scrollPosition);
+      $(".header").removeClass("header--active");
     }
   });
 

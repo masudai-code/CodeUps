@@ -2,14 +2,12 @@
 
 .campaign-card {
   padding-top: rem(27);
-  padding-bottom: rem(40);
   flex: 0 0 auto;
   width: 100%;
   max-width: rem(280);
   height: auto;
   @include mq("md") {
     padding-top: 0;
-    padding-bottom: rem(80);
     max-width: rem(333);
   }
 }

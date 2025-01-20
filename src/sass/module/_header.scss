@@ -3,6 +3,7 @@
 .header {
   height: rem(80);
   background-color: rgba($black1, 0.32);
+  transition: background-color 0.5s ease;
   @include mq("md") {
     height: rem(90);
   }
@@ -103,4 +104,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.header--active {
+  background-color: $green;
+  transition: 0.5s;
 }

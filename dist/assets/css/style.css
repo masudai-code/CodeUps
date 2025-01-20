@@ -157,7 +157,7 @@ a {
 }
 
 .layout-about-us {
-	margin-top: 2.8125rem;
+	margin-top: 5rem;
 }
 
 .layout-blog {
@@ -166,7 +166,6 @@ a {
 
 .layout-campaign {
 	margin-top: 2.5rem;
-	padding-bottom: 2.5rem;
 }
 
 .layout-contact {
@@ -345,7 +344,6 @@ a {
 	flex: 0 0 auto;
 	height: auto;
 	max-width: 17.5rem;
-	padding-bottom: 2.5rem;
 	padding-top: 1.6875rem;
 	width: 100%;
 }
@@ -502,6 +500,7 @@ a {
 }
 
 .campaign__btn-wrap {
+	margin-top: 2.5rem;
 	text-align: center;
 }
 
@@ -733,14 +732,14 @@ a {
 	background-color: #408f95;
 	bottom: 0;
 	display: none;
-	height: 100vh;
+	height: calc(100vh - 5rem);
 	left: 0;
 	overflow-y: scroll;
 	padding: 6.6875rem 0 6.5rem;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	scrollbar-width: none;
-	top: 0;
+	top: 5rem;
 	width: 100%;
 	z-index: 800;
 }
@@ -993,6 +992,7 @@ a {
 .header {
 	background-color: rgba(13, 41, 54, 0.32);
 	height: 5rem;
+	transition: background-color 0.5s ease;
 }
 
 .header__inner {
@@ -1085,6 +1085,11 @@ a {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+.header--active {
+	background-color: #408f95;
+	transition: 0.5s;
 }
 
 .information__wrap {
@@ -1374,7 +1379,7 @@ html {
 }
 
 .layout-about-us {
-	margin-top: 8.4375rem;
+	margin-top: 8.75rem;
 }
 
 .layout-blog {
@@ -1383,7 +1388,6 @@ html {
 
 .layout-campaign {
 	margin-top: 7.5rem;
-	padding-bottom: 0.625rem;
 }
 
 .layout-contact {
@@ -1523,7 +1527,6 @@ html {
 
 .campaign-card {
 	max-width: 20.8125rem;
-	padding-bottom: 5rem;
 	padding-top: 0;
 }
 
@@ -1585,6 +1588,10 @@ html {
 
 .campaign__swiper {
 	margin-top: 2.375rem;
+}
+
+.campaign__btn-wrap {
+	margin-top: 5rem;
 }
 
 .common-title__main {

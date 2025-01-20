@@ -2,14 +2,14 @@
 
 .drawer-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 800;
-  top: 0;
+  top: rem(80);
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - rem(80));
   padding: rem(107) 0 rem(104);
   background-color: $green;
   overflow-y: scroll;
