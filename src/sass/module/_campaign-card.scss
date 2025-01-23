@@ -18,14 +18,17 @@
 
 .campaign-card a {
   display: flex;
-  flex-direction: column;
   height: 100%;
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
 }
 
+.campaign-card__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .campaign-card__img {
   width: 100%;
-  overflow: hidden;
   transition: 0.3s;
 }
 
@@ -37,6 +40,9 @@
 
 .campaign-card__content {
   padding: rem(16) rem(16) rem(20.5) rem(16);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   @include mq("md") {
     padding: rem(23) rem(17) rem(36.422) rem(16);
   }
@@ -66,26 +72,42 @@
     margin-top: rem(6);
   }
 }
-.campaign-card__title::before {
+// .campaign-card__title::before {
+//   display: inline-block;
+//   content: "";
+//   position: absolute;
+//   bottom: rem(-5.5);
+//   left: 0;
+//   width: 100%;
+//   height: rem(1);
+//   background-color: $green;
+//   border-radius: rem(1);
+//   @include mq("md") {
+//     bottom: rem(-6);
+//   }
+// }
+
+.campaign-card__description {
+  margin-top: rem(15);
+  position: relative;
+  @include mq("md") {
+    padding: rem(22) rem(15) 0 rem(19);
+    margin-top: auto;
+  }
+}
+
+.campaign-card__description::before {
   display: inline-block;
   content: "";
   position: absolute;
-  bottom: rem(-5.5);
+  top: rem(8);
   left: 0;
   width: 100%;
   height: rem(1);
   background-color: $green;
   border-radius: rem(1);
   @include mq("md") {
-    bottom: rem(-6);
-  }
-}
-
-.campaign-card__description {
-  margin-top: rem(15);
-  @include mq("md") {
-    margin-top: initial;
-    padding: rem(22) rem(15) 0 rem(19);
+    top: rem(12);
   }
 }
 
