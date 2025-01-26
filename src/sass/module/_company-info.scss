@@ -32,10 +32,10 @@
 }
 
 .company-info__list {
-  padding-top: rem(15);
+  margin-top: rem(15);
   @include mq("md") {
     display: flex;
-    padding-top: rem(23);
+    margin-top: rem(23);
   }
 }
 

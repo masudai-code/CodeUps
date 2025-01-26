@@ -71,14 +71,14 @@ jQuery(function ($) {
 
   // campaign-swiper
   var campaign__swiper = new Swiper(".js-campaign-swiper", {
-    // loop: true,
-    // speed: 2000,
-    // slidesPerView: "auto",
-    // spaceBetween: 26,
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    // },
+    loop: true,
+    speed: 2000,
+    slidesPerView: "auto",
+    spaceBetween: 26,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       768: {
         slidesPerView: "auto",
