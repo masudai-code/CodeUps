@@ -48,6 +48,7 @@
 
 .header__nav-list {
   display: flex;
+  gap: rem(40);
   height: inherit;
 }
 
@@ -59,7 +60,6 @@
   height: inherit;
   display: flex;
   align-items: center;
-  padding: 0 rem(20);
   text-align: center;
 }
 

@@ -470,12 +470,10 @@ a {
 .campaign-swiper__button-wrap .swiper-button-prev,
 .campaign-swiper__button-wrap .swiper-button-next {
 	height: 5rem;
+	left: 0;
+	margin: 0;
 	position: relative;
 	width: 5rem;
-}
-
-.campaign-swiper__button-wrap .swiper-button-next {
-	margin-left: 6.25rem;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::after,
@@ -495,6 +493,10 @@ a {
 
 .swiper-button-next::after {
 	background-image: url(./../images/common/arrow-right.svg);
+}
+
+.swiper-wrapper {
+	padding-bottom: 0.5rem;
 }
 
 .campaign {
@@ -1036,6 +1038,7 @@ a {
 
 .header__nav-list {
 	display: flex;
+	gap: 2.5rem;
 	height: inherit;
 }
 
@@ -1047,7 +1050,6 @@ a {
 	align-items: center;
 	display: flex;
 	height: inherit;
-	padding: 0 1.25rem;
 	text-align: center;
 }
 
@@ -1165,7 +1167,7 @@ a {
 	position: absolute;
 	text-align: center;
 	top: 49.4%;
-	transform: translate(-46.4%, -50%);
+	transform: translate(-50%, -50%);
 	z-index: 2;
 }
 
@@ -1174,6 +1176,7 @@ a {
 	font-family: "Lato", sans-serif;
 	font-size: 2.5rem;
 	letter-spacing: 0.54em;
+	text-indent: 0.54em;
 	text-transform: uppercase;
 }
 
@@ -1181,7 +1184,6 @@ a {
 	color: #fff;
 	font-family: "Gotu", sans-serif;
 	font-size: 1.25rem;
-	margin-left: -1.3125rem;
 	margin-top: -0.3125rem;
 }
 
@@ -1583,9 +1585,10 @@ html {
 }
 
 .campaign-swiper__button-wrap {
+	gap: 5rem;
 	position: absolute;
 	right: 0.9375rem;
-	top: 1.375rem;
+	top: 0.0625rem;
 }
 
 .campaign__inner {
@@ -1787,7 +1790,7 @@ html {
 .mv__content {
 	left: 50.1%;
 	top: 50%;
-	transform: translate(-46.4%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .mv__title {
@@ -1796,7 +1799,6 @@ html {
 }
 
 .mv__sub-title {
-	margin-left: -2.6875rem;
 	margin-top: 0.1875rem;
 }
 

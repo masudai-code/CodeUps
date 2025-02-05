@@ -6,8 +6,9 @@
   padding-bottom: 0;
   @include mq("md") {
     position: absolute;
-    top: rem(22);
+    top: rem(1);
     right: rem(15);
+    gap: rem(80);
   }
 }
 
@@ -16,10 +17,8 @@
   position: relative;
   height: rem(80);
   width: rem(80);
-}
-
-.campaign-swiper__button-wrap .swiper-button-next {
-  margin-left: rem(100);
+  margin: 0;
+  left: 0;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::after,
@@ -39,4 +38,8 @@
 
 .swiper-button-next::after {
   background-image: url(./../images/common/arrow-right.svg);
+}
+
+.swiper-wrapper{
+  padding-bottom: rem(8);
 }
