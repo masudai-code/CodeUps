@@ -5,6 +5,7 @@
   @include mq("md") {
     margin-top: rem(38);
     display: flex;
+    gap: rem(48);
   }
 }
 
@@ -28,7 +29,6 @@
   margin-top: rem(28);
   @include mq("md") {
     margin-top: rem(64);
-    margin-left: rem(48);
     max-width: rem(492);
     width: 100%;
   }

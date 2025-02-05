@@ -39,6 +39,13 @@
   }
 }
 
+.blog__list {
+  margin: rem(27) auto 0;
+  @include mq("md") {
+    margin: rem(78) auto 0;
+  }
+}
+
 .blog__btn-wrap {
   margin-top: rem(40);
   text-align: center;

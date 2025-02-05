@@ -223,6 +223,7 @@ a {
 	position: absolute;
 	top: 0;
 	width: 37.1014492754%;
+	z-index: 1;
 }
 
 .about-us__img01 img {
@@ -238,7 +239,7 @@ a {
 	position: absolute;
 	right: 0;
 	width: 81.4492753623%;
-	z-index: -1;
+	z-index: 0;
 }
 
 .about-us__img02 img {
@@ -276,7 +277,6 @@ a {
 	display: grid;
 	gap: 2.5rem;
 	grid-template-columns: repeat(1, 1fr);
-	margin: 1.6875rem auto 0;
 	width: 96.522%;
 }
 
@@ -333,6 +333,10 @@ a {
 
 .blog {
 	position: relative;
+}
+
+.blog__list {
+	margin: 1.6875rem auto 0;
 }
 
 .blog__btn-wrap {
@@ -1289,7 +1293,6 @@ a {
 	display: grid;
 	gap: 2.5rem;
 	grid-template-columns: repeat(1, 1fr);
-	margin: 2.625rem auto 0;
 	width: 100%;
 }
 
@@ -1361,6 +1364,10 @@ a {
 
 .voice {
 	position: relative;
+}
+
+.voice__list {
+	margin: 2.625rem auto 0;
 }
 
 .voice__btn-wrap {
@@ -1465,6 +1472,7 @@ html {
 	top: 50.3%;
 	transform: translate(-41%, -55%);
 	width: 77.7%;
+	z-index: 2;
 }
 
 .about-us__main-text {
@@ -1490,7 +1498,6 @@ html {
 
 .blog-list {
 	grid-template-columns: repeat(3, 1fr);
-	margin: 4.875rem auto 0;
 	width: 100%;
 }
 
@@ -1528,6 +1535,10 @@ html {
 	position: absolute;
 	top: 1.5rem;
 	width: 30.3473%;
+}
+
+.blog__list {
+	margin: 4.875rem auto 0;
 }
 
 .blog__btn-wrap {
@@ -1753,6 +1764,7 @@ html {
 
 .information__wrap {
 	display: flex;
+	gap: 3rem;
 	margin-top: 2.375rem;
 }
 
@@ -1765,7 +1777,6 @@ html {
 }
 
 .information__content {
-	margin-left: 3rem;
 	margin-top: 4rem;
 	max-width: 30.75rem;
 	width: 100%;
@@ -1866,10 +1877,6 @@ html {
 	width: 100%;
 }
 
-.voice-list {
-	margin: 1.75rem auto 0;
-}
-
 .voice-list__item a {
 	padding: 1.5rem 1.5rem 1.3125rem;
 }
@@ -1932,6 +1939,10 @@ html {
 	position: absolute;
 	right: calc(50% - min(48vw, 33.75rem));
 	width: 4.930556%;
+}
+
+.voice__list {
+	margin: 1.75rem auto 0;
 }
 
 .voice__btn-wrap {

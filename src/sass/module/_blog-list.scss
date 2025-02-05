@@ -4,11 +4,9 @@
   display: grid;
   gap: rem(40);
   grid-template-columns: repeat(1, 1fr);
-  margin: rem(27) auto 0;
   width: 96.522%;
   @include mq("md") {
     grid-template-columns: repeat(3, 1fr);
-    margin: rem(78) auto 0;
     width: 100%;
   }
 }
