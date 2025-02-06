@@ -71,10 +71,10 @@
   font-weight: $medium;
   color: $black1;
   border-bottom: rem(1) solid $green;
-  padding-top: rem(4);
+  margin-top: rem(4);
   @include mq("md") {
     font-size: rem(24);
-    padding-top: rem(12);
+    margin-top: rem(12);
     line-height: 1.43;
   }
 }
@@ -102,8 +102,8 @@
   font-size: rem(16);
   line-height: calc(24 / 16);
   color: $black1;
-  padding-top: rem(18);
+  margin-top: rem(18);
   @include mq("md") {
-    padding-top: rem(43);
+    margin-top: rem(43);
   }
 }

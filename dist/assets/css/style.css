@@ -748,7 +748,7 @@ a {
 	height: calc(100vh - 5rem);
 	left: 0;
 	overflow-y: scroll;
-	padding: 6.6875rem 0 6.5rem;
+	padding: 1.5rem 0 3.125rem;
 	position: fixed;
 	right: 0;
 	scrollbar-width: none;
@@ -1339,7 +1339,7 @@ a {
 	color: #0d2936;
 	font-size: 1rem;
 	font-weight: 500;
-	padding-top: 0.25rem;
+	margin-top: 0.25rem;
 }
 
 .voice-list__item-img {
@@ -1359,7 +1359,7 @@ a {
 	color: #0d2936;
 	font-size: 1rem;
 	line-height: 1.5;
-	padding-top: 1.125rem;
+	margin-top: 1.125rem;
 }
 
 .voice {
@@ -1899,7 +1899,7 @@ html {
 .voice-list__title {
 	font-size: 1.5rem;
 	line-height: 1.43;
-	padding-top: 0.75rem;
+	margin-top: 0.75rem;
 }
 
 .voice-list__item-img {
@@ -1912,7 +1912,7 @@ html {
 }
 
 .voice-list__content {
-	padding-top: 2.6875rem;
+	margin-top: 2.6875rem;
 }
 
 .voice::before {
