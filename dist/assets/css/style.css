@@ -1005,7 +1005,7 @@ a {
 .header {
 	background-color: rgba(13, 41, 54, 0.32);
 	height: 5rem;
-	transition: background-color 0.5s ease;
+	transition: background-color 0.5s;
 }
 
 .header__inner {
