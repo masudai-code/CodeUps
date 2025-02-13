@@ -85,22 +85,22 @@
   transform: scale(1, 1);
 }
 
-.header__nav-item-text--main {
+.header__nav-item-text-main {
   font-size: rem(18);
   line-height: 1;
   color: $white;
   font-family: $base-font-family-en;
 }
 
-.header__nav-item-text--sub {
+.header__nav-item-text-sub {
   font-size: rem(10);
   line-height: calc(15 / 10);
   color: $white;
   margin-top: rem(6);
 }
 
-.header__nav-item-text--main,
-.header__nav-item-text--sub {
+.header__nav-item-text-main,
+.header__nav-item-text-sub {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
