@@ -2,9 +2,6 @@
 
 .blog {
   position: relative;
-  @include mq("md") {
-    padding-top: rem(100);
-  }
 }
 
 .blog::before {

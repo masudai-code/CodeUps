@@ -1400,6 +1400,7 @@ html {
 
 .layout-blog {
 	margin-top: 0;
+	padding-top: 6.25rem;
 }
 
 .layout-campaign {
@@ -1503,10 +1504,6 @@ html {
 
 .blog-list__text {
 	margin-top: 1.125rem;
-}
-
-.blog {
-	padding-top: 6.25rem;
 }
 
 .blog::before {
