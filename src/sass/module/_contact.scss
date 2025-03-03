@@ -37,6 +37,37 @@
   }
 }
 
+.contact__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  margin-left: rem(82);
+  border-left: rem(1) solid $green;
+  padding: rem(18.5) rem(0) rem(18.5) rem(17);
+}
+
+.contact__title-wrap {
+  margin: rem(40) rem(15) 0;
+  @include mq("md") {
+    margin-left: rem(82);
+    flex: 1;
+    border-left: rem(1) solid $green;
+    margin-top: initial;
+    margin-right: initial;
+    padding: rem(18.5) 0 rem(18.5) rem(17);
+  }
+}
+
+.contact__link {
+  font-size: rem(14);
+  line-height: calc(18 / 14);
+  color: $green;
+  margin-top: rem(8);
+  display: block;
+  text-align: center;
+}
+
 .contact__btn-wrap {
   margin-top: rem(38);
   text-align: center;

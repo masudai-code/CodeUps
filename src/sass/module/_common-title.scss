@@ -25,7 +25,6 @@
   line-height: calc(18 / 12);
   color: $green;
   margin-top: rem(5);
-  
   @include mq("md") {
     margin-top: rem(10);
   }
@@ -51,12 +50,4 @@
 
 .common-title__sub.common-title__sub--mt {
   margin-top: rem(-5);
-}
-
-.common-title__link {
-  font-size: rem(14);
-  line-height: calc(18 / 14);
-  color: $green;
-  margin-top: rem(8);
-  display: block;
 }
