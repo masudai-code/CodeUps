@@ -1,19 +1,19 @@
 @use "global" as *;
 
-.price-table__table {
+.price-content__table {
   border-collapse: collapse;
 }
 
-.price-table__table:not(:first-child) {
+.price-content__table:not(:first-child) {
   margin-top: rem(37);
 }
 
-.price-table__table .custom-padding td {
+.price-content__table .custom-padding td {
   padding-top: rem(8);
   padding-bottom: rem(4);
 }
 
-.price-table__table th {
+.price-content__table th {
   font-size: rem(16);
   font-weight: $bold;
   color: $black1;
@@ -22,7 +22,7 @@
   line-height: calc(24 / 16);
 }
 
-.price-table__table td {
+.price-content__table td {
   font-size: rem(14);
   line-height: calc(24 / 14);
   color: $black1;
@@ -36,6 +36,6 @@
   }
 }
 
-.price-table__price {
+.price-content__price {
   text-align: right;
 }
